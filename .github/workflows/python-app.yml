@@ -41,4 +41,5 @@ jobs:
       run: |
         pytest
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-app:$(date +%s)
+      run: |
+       docker build . --file Dockerfile --tag my-app:$(date +%s)
