@@ -39,6 +39,8 @@ jobs:
          #flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-app:$(date +%s)
+    - name: run docker compose file
+      run: docker compose up
     #- name: Test with pytest
       #run: |
        # pytest
