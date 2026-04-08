@@ -1,2 +1,3 @@
-numpy
-pandas
+flask
+pyodbc
+mysql-connector-python
