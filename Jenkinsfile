@@ -6,6 +6,7 @@ pipeline {
             steps {
                 bat 'javac demo.java'
             }
+        }
         stage('Run Java File') {
             steps {
                 bat 'java demo.java'
