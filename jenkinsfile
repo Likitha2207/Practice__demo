@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/your-username/your-repo.git'
+            }
+        }
+
+        stage('Run Python File') {
+            steps {
+                bat 'python demo.py'
+            }
+        }
+    }
+}
