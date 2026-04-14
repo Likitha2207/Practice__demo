@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Python File') {
+        stage('Run Java File') {
             steps {
-                bat 'python demo.py'
+                bat 'javac demo.java'
             }
         }
     }
